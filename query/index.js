@@ -40,6 +40,7 @@ app.post("/events", (req, res) => {
 
   res.send({ data: "OK" });
 });
+
 const PORT = 4002;
 app.listen(PORT, async () => {
   console.log(`Query service running on port: ${PORT}`);
