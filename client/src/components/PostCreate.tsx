@@ -11,7 +11,7 @@ export const PostCreate = ({ setRender, render }: PostCreateProps) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await axios.post("http://localhost:4000/posts", { title });
+    await axios.post("http://posts.com/posts/create", { title });
 
     setRender(!render);
     setTitle("");
